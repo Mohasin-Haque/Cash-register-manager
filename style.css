@@ -1,0 +1,129 @@
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.heading{
+    background-color: #06C972;
+    color: #fee27f;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+body{
+    align-items: center;
+    background-color: black;
+    
+}
+
+.description{
+    display: block;
+    background-color: #06C972;
+    border-color: black;
+    border-radius: 1rem;
+    color: #fee27f;
+    padding: 2rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+}
+
+.label {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    background-color: #06C972;
+    color: #fee27f;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+
+#bill-amount {
+    padding: 0.5rem;
+    width: 50vh;
+}
+
+#cash-check {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#cash-given {
+    padding: 0.5rem;
+    width: 50vh;
+}
+
+#next-button {
+    color: #fee27f;
+    background-color: #06C972;
+    border: solid 2px #fee27f;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+
+#next-button:hover {
+    font-weight: bolder;
+    color: #21302f;
+    background-color: #DF5E5E;
+    cursor: pointer;
+
+}
+
+#check-button {
+    color: #fee27f;
+    background-color: #06C972;
+    border: solid 2px #fee27f;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+
+#check-button:hover {
+    font-weight: bolder;
+    color: #21302f;
+    background-color: #DF5E5E;
+    cursor: pointer;
+}
+
+#error-message{
+    align-items: center;
+    text-align: center;
+    background-color: #06C972;
+    color: #fee27f;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+
+}
+
+.change-table {
+    margin-top: 1rem;
+    border: solid 2px black;
+    margin: auto;
+}
+
+.change-table th {
+    background-color: #DF5E5E;
+    color: white;
+    padding: 0.5rem;
+}
+
+.no-of-notes {
+    background-color: white;
+    padding: 1.2rem;
+    border: solid 2px black;
+}
+
+.amount {
+    background-color: #DF5E5E;
+    color: white;
+    text-align: center;
+    border: solid 2px black;
+}
+
