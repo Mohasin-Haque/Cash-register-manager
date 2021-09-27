@@ -25,16 +25,16 @@ function billAmnt() {
     if (billAmount.value > 0) {
         cashCheck.style.display = "flex";
     } else {
-        showMessage("Paisa do..😐");
+        showMessage("Enter positive number bidu");
     }
 }
-
+// Paisa do..😐
 
 function changeCalculater() {
 
     if (cashGiven.value >= billAmount.value) {
         tableDisplay.style.display = "block";
-        hideMessage();
+        hideMessage(); 
         const amountToBeReturned = cashGiven.value - billAmount.value;
         calculateChange(amountToBeReturned);
         if (amountToBeReturned == 0) {
@@ -43,7 +43,7 @@ function changeCalculater() {
         }
     } else {
         tableDisplay.style.display = "none";
-        showMessage("Pura paisa do nhi to bartan manjo.😏");
+        showMessage("ya to cash do nhi to Pura paisa do nhi to bartan manjo.😏");
     }
 }
 
