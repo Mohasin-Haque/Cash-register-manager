@@ -25,7 +25,7 @@ function billAmnt() {
     hideMessage();
     if (Number(billAmount.value) > 0) {
         cashCheck.style.display = "flex";
-    }else if(billAmount.value === "") {
+    }else if(billAmount.value === "" || billAmount.value === "0" ) {
         showMessage("Enter the Bill Amount bawa");
      } else {
         showMessage("Enter positive number bidu. Apun ko Paisa do..😐");
