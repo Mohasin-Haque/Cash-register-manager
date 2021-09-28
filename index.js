@@ -22,20 +22,22 @@ checkButton.addEventListener("click", changeCalculater);
 // hideMessage();
 
 function billAmnt() {
-    if (billAmount.value > 0) {
+    hideMessage();
+    if (Number(billAmount.value) > 0) {
         cashCheck.style.display = "flex";
-    } else {
-        showMessage("Enter positive number bidu");
+    }else if(billAmount.value === "") {
+        showMessage("Enter the Bill Amount bawa");
+     } else {
+        showMessage("Enter positive number bidu. Apun ko Paisa do..😐");
     }
 }
-// Paisa do..😐
+
 
 function changeCalculater() {
-
-    if (cashGiven.value >= billAmount.value) {
+    if (Number(cashGiven.value) >= Number(billAmount.value)) {
         tableDisplay.style.display = "block";
         hideMessage(); 
-        const amountToBeReturned = cashGiven.value - billAmount.value;
+        const amountToBeReturned = Number(cashGiven.value) - Number(billAmount.value);
         calculateChange(amountToBeReturned);
         if (amountToBeReturned == 0) {
             showMessage("Paisa ho gya🙄 ...  Ab kya chahiye..🤨 ");
@@ -43,7 +45,7 @@ function changeCalculater() {
         }
     } else {
         tableDisplay.style.display = "none";
-        showMessage("ya to cash do nhi to Pura paisa do nhi to bartan manjo.😏");
+        showMessage("kya....Paisa Nhi h?? Chalo bartan manjo.😏");
     }
 }
 
